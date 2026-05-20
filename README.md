@@ -191,10 +191,6 @@ See `.gitignore` for complete list. Clone and run locally or on AWS; data is loa
 
 ---
 
-## License
-
-[Your License Here]
-
 ## Contact
 
-[Your Contact Here]
+Linkedin: https://www.linkedin.com/in/vinicius01/
