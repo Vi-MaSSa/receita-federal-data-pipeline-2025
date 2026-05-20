@@ -1,0 +1,41 @@
+﻿--- AUDITORIA DE INTEGRIDADE | PASSO 2 ---
+Arquivo analisado: C:\pipeline_dados_receita_federal\output_final\amostra_validacao.csv
+
+[1] Integridade das Colunas: FAIL
+    Colunas ausentes: ['NOME_MUN_RFB_OFICIAL', 'COD_IBGE_7', 'AREA_KM2']
+[2] Filtro de CNAEs (Etapa 1): PASS
+    Linhas fora da regra esperada: 0
+[3] Enriquecimento de MunicÃ­pios (Etapa 2): FAIL
+    NOME_MUN_RFB_OFICIAL preenchido: 0.00%
+    Linhas com nome oficial vazio: 499
+[4] CompatibilizaÃ§Ã£o IBGE (Etapa 3): PASS
+    Taxa de preenchimento COD_IBGE_7: 100.00%
+    Taxa de preenchimento AREA_KM2: 100.00%
+    Buracos remanescentes no join: 0
+    Top 5 municÃ­pios com mais falhas no join:
+      - Nenhuma falha encontrada
+[5] ConsistÃªncia de Estrutura do CSV: PASS
+    Delimitador detectado: ;
+    CodificaÃ§Ã£o UTF-8 com BOM: True
+[6] ConsistÃªncia de Tipagem: PASS
+    COD_IBGE_7 invÃ¡lidos: 0
+    AREA_KM2 nÃ£o numÃ©rico: 0
+[7] Volume de Dados: FAIL
+    Total de linhas: 499
+
+Amostragem de ProduÃ§Ã£o - 5 primeiras linhas:
+CNPJ_BASICO CNAE_PRINCIPAL COD_MUN_RFB NOME_MUN_RFB_OFICIAL COD_IBGE_7 AREA_KM2
+   07988123        5211701        5035                                         
+   30032222        4930202        0531                                         
+   29303056        4729699        3597                                         
+   26712352        4732600        0261                                         
+   07447199        4930202        3117                                         
+
+Amostragem de ProduÃ§Ã£o - 5 Ãºltimas linhas:
+CNPJ_BASICO CNAE_PRINCIPAL COD_MUN_RFB NOME_MUN_RFB_OFICIAL COD_IBGE_7 AREA_KM2
+   37906186        5320202        5869                                         
+   37906371        4930201        7121                                         
+   37906693        5620104        8105                                         
+   37906775        4781400        7077                                         
+   37906877        5320201        5847                                         
+

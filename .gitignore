@@ -1,0 +1,74 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Python Virtual Environments
+venv/
+.venv/
+venv_dados/
+env/
+ENV/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Data & Artifacts (RAW/SILVER/GOLD) — NEVER VERSION
+dados_brutos/
+teste_local/dados_brutos/
+data/
+raw/
+silver/
+gold/
+
+# Outputs
+output/
+output_amostras/
+output_final/
+parquet_intermediario/
+
+# Logs
+logs/
+*.log
+
+# Large Files
+*.zip
+*.parquet
+*.pq
+*.csv
+*.xlsx
+*.xls
+.tmp_duckdb*/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+*.iml
+
+# EXCEPTIONS: These files ARE tracked
+!.env.example
+!data_sample/
+!data_sample/*.csv
+!docs/
+!README.md
